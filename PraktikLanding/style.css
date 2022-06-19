@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    opacity: 1;  
+}
+
+.firstPage {
+    width: 100%;
+    height: 95vh;
+    background-image: url(misc/como-ser-freelance.jpg);
+}
+
+.leftFilter {
+    width: 39%;
+    height: 100%;
+    background-color: #ffc900;
+    opacity: .9;
+}
+
+.sstulogo {
+    margin-left: 5%;
+    width: 10%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(misc/sstulogo-.png); 
+}
+
+.hello {
+    background-color: white;
+    width: 40%;
+    height: 10%;
+    border-radius: 15px;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding: 15px;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.texts {
+    background-color: white;
+    text-align: center;
+    border-radius: 100px;
+    border-style: double;
+    margin: 55px;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav {
+    background-color: white;
+    height: auto;
+    width: 50%;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav .button {
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -111px;
+}
+
+.content {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.content h4 {
+    text-align: center;
+}
+
+.input {
+    width: 20px;
+}
+
+.quiz-frame {
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quiz__head {
+    font-size: 20pt;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.head__content {
+    padding: 5px;
+}
+
+.quiz__body {
+    margin: 10px;
+}
+
+.quiz__footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.footer__content {
+    padding: 5px;
+}
+
+.quiz__body .button {
+    border: 0;
+    background-color: gray(187, 64, 64);
+    width: 70%;
+    font-size: 15pt;
+    display: block;
+    margin: 2px auto;
+    cursor: pointer;
+}
+
+.button_wrong {
+    background: #EB6465;
+}
+
+.button_correct {
+    background: #5EB97D;
+}
+
+.button_passive {
+    background: #B3B3B3;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.top-left {
+    font-family: Impact, sans-serif;
+    font-size: 2.2em;
+    position: absolute;
+    color:black;
+    top: 100px;
+    left: 100px;
+}
+.top-right {
+    font-family: Impact, sans-serif;
+    font-size: 2.2em;
+    position: absolute;
+    color:black;
+    top: 100px;
+    right: 100px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.current {
+	background: #b9b69b;
+	text-align: center;
+	background: rgb(207, 219, 191)
+}
+.container{
+	width:100%;
+	height:100%;
+	display:table;
+}
+.t-c{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.calendar {
+	display:inline-block;
+	width: 300px;
+	margin:auto;
+	background: #0a2276;
+	box-shadow: 0 5px 25px rgba(16, 16, 16, 0.5);
+	color: #fff;
+}
+.date {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 40px;
+}
+.month {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.day {
+	height: 30px;
+	width: 100%;
+	font-size: 15px;
+	line-height: 30px;
+}
+.year {
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	font-size: 30px;
+}
+.date-small {
+	list-style-type: none;
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	display:inline-block;
+	border-radius: 50%;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.date-small:hover {
+	background: #e0b70d;
+}
+.datelist {
+	float:left;
+	width:100%;
+	height:100%;
+	background: #8d6666cc;
+	box-shadow: 0 -25px 25px -25px rgba(16, 16, 16, 0.5);
+}
+.today {
+	background: rgb(203, 239, 214);
+	color: #000;
+}
+.today:hover {
+	background: #e0b70d;
+	transition:0.3s;
+}
+.day-full {
+	background: #b9b69b;
+	z-index: 3;
+	width: 100%;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	cursor: default;
+}
+
