@@ -1,153 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"  >
-    <title>Landing Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript-Page</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="sstulogo"></div>            
-        </div>
-    </header>
-    <main>
-        <div class="firstPage">
-            <div class="leftFilter">
-                <div class="hello">
-                    <form>
-                        <p>
-                            <h4>Ваше имя</h4>
-                            <input type="text" id="name">
-                            <input type="button" value="Отправить" onclick="sendForm()">
-                        </p>
-                    </form>
-                    <p id="hello"></p>
-                    <p id="yourName"></p>
-                </div>
-
-                <div class="texts">
-                    <h2>
-                        JavaScript это язык, который позволяет вам применять сложные вещи на web странице — каждый раз, когда на web странице происходит что-то большее, 
-                        чем просто её статичное отображение — отображение периодически обновляемого контента, или интерактивных карт, или анимация 2D/3D графики, 
-                        или прокрутка видео в проигрывателе, и т.д. — можете быть уверены, что скорее всего, не обошлось без JavaScript. <br/>
-                        Для этого и нужен JavaScript. <br/>   
-                        Сегодня это один из самых популярных и востребованных языков программирования, поэтому он пригодится каждому веб-разработчику.<br/><br/>
-                        Посмотрим простейшие примеры использования JavaScript.
-                    </h2>
-                </div>
-            </div>
-        </div>  
-    </main>
-    <section>
-        <div class="nav" id="nav">
-            <ul>
-                <li><input type="button" class="button" value="Площадь треугольника" onclick="showTriangle()"></li>
-                <li><input type="button" class="button" value="Строки" onclick="showString()"></li>
-                <li><input type="button" class="button" value="Массив" onclick="showMass()"></li>
-                <li><input type="button" class="button" value="Таймер" onclick="showTimer()"></li>
-                <li><input type="button" class="button" value="Тест" onclick="showTest()"></li>
-                <li><input type="button" class="button" value="Заставка" onclick="showMiniature()"></li>
-            </ul>
-        </div>
-
-        <div class="content" style="visibility: hidden;" id="Triangle">
-            <h4>Площадь треугольника</h4>
-            <form name="form">
-                Сторона 1 <input type="text" size="8" maxlength="8" name="st1"> Сторона 2 <input type="text" size="8" maxlength="8" name="st2"> Сторона 3 <input type="text" size="8" maxlength="8" name="st3"><br><br>
-                <input type="button" value="Вычислить" onClick="areaOfTriangle(form);">
-                <input type="reset" value="Отменить"> Результат <input type="text" size="8" maxlength="8" name="res">
-            </form>
-            <p id="answer"></p>
-        </div>
-
-        <div class="content" style="visibility: hidden;" id="String">
-            <h4>Сравнение строк</h4>
-            <form>
-                <p>Строка 1
-                    <Input type="text" id="string1"></Input>
-                </p>
-                <p>Строка 2
-                    <Input type="text" id="string2"></Input>
-                </p>
-                <p>
-                    <input type="button" value="Сравнить" onclick="compareString()">
-                </p>
-            </form>
-            <p id="ans1"></p>
-        </div>
-
-        <div class="content" style="visibility: hidden;" id="Mass">
-            <h4>Максимальное и минимальное значение в массиве из 5 элементов</h4>
-            <form id="formid">
-                <p>Введите массив
-                    <input class="input" type="text">
-                    <input class="input" type="text">
-                    <input class="input" type="text">
-                    <input class="input" type="text">
-                    <input class="input" type="text">
-                </p>
-            </form>
-            <input type="button" value="Отправить" onclick="calculateMass()">
-            <p id="ans2a"></p>
-            <p id="ans2b"></p>
-        </div>
-
-        <div class="wrapper" style="visibility: hidden;" id="Timer">
-            <h2>Таймер</h2>
-            <p>
-            <span id="seconds">00</span><span class="dots">:</span><span id="tens">00</span>
-            </p>
-            <button id="button-start">Старт</button>
-            <button id="button-stop">Стоп</button>
-            <button id="button-reset">Обнулить</button>
-
-        </div>
-
-        <script src="script.js"></script>
-
-        <div class="content" style="visibility: hidden;" id="Test">
-            <div class="quiz__head">
-                <div class="head__content" id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus odit accusamus, illum quas magni provident odio praesentium commodi sint, porro harum, minus cupiditate architecto culpa aut ex dolore officia.</div>
-            </div>
-            <div class="quiz__body">
-                <div class="buttons">
-                    <div class="buttons__content" id="buttons">
-                        <button class="button">Default button</button><br>
-                        <button class="button button_wrong">Wrong answer</button><br>
-                        <button class="button button_correct">Correct answer</button><br>
-                        <button class="button button_passive">Unclicked button</button><br>
-                    </div>
-                </div>
-
-                <div class="quiz__footer">
-                    <div class="footer__content" id="pages">0 / 0</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" style="visibility: hidden;" id="Miniature">
-            <img src="misc/back.jpg" onclick="showMiniature()">
-            <div class="centered">
-                <div class="container">
-                    <div class="t-c">
-                        <div class="calendar">
-                            <div class="current">
-                                <div class="month"></div>
-                                <div class="date"></div>
-                                <div class="year"></div>
-                        </div>
-                            <div class="datelist"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="top-left"><p id="top-left"></p></div>
-            <div class="top-right"><p id="top-right"></p></div>
-            </div>
-            <script src="app.js"></script>
-    </section>
+  <div class="container" id="glav">
+    <div class="header">
+      <div class="title-block">
+        <h1 class="title">JavaScript</h1>
+      </div>
+      <div class="userpic"></div>
+    </div>
+    <div class="nav">
+      <ul>  
+        <li id="two"><a href="#" onclick="mainbutton_click()" id="mainbutton">Главная</a></li>
+        <li id="one"><a href="#" onclick="formbutton_click()" id="formbutton">Тест</a></li>   
+        <li ><a href="" ><p id="three"> </p></a></li> 
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div id="contid" class="content">
+        <h3>Главная</h3>
+        <p  class="maincontent">
+          JavaScript это язык, который позволяет вам применять сложные вещи на web странице — каждый раз, когда на web странице происходит что-то большее, 
+          чем просто её статичное отображение — от ображение периодически обновляемого контента, или интерактивных карт, или анимация 2D/3D графики, 
+          или прокрутка видео в проигрывателе, и т.д. — можете быть уверены, что скорее всего, не обошлось без JavaScript. <br/>
+          Для этого и нужен JavaScript. <br/>   
+          Сегодня это один из самых популярных и востребованных языков программирования, поэтому он пригодится каждому веб-разработчику.<br/><br/>
+          Посмотрим простейшие примеры использования JavaScript.</p>
+      </div>
+      <div id="anketid" class="anketa">
+        <iframe src="quiz/quiz.html" width="480" height="700" class="quiz-frame"></iframe>       
+      </div>         
+      <div class="sidebar">
+        <h3>Основы</h3>
+        <ul class="skills">
+          <li><input type="submit" onclick="pra1First()" value="Президент"></li>
+          <li><input type="submit" onclick="pra1Second()" value="Цифра >5"></li>
+          <li><input type="submit" onclick="pra1Third()" value="Чётные"></li>
+          <li><input type="submit" onclick="pra1Four()" value="Нечётные"></li>
+          <li><input type="submit" onclick="pra2FullDate()" value="Полная дата"></li>
+          <li><input type="submit" onclick="pra2ShortDate()" value="Короткая дата"></li>
+          <li><input type="submit" onclick="pra2Arrays()" value="Массив из двух массивов"></li>
+          <li><a href="#popup" onclick="auth()">Заставка</a></li>       
+        </ul>     
+      </div>
+  </div>
+  <script src="scripts.js"></script>
+  <div id="popup" class="popup">
+    <a href="#glav" class="popup_area"></a>
+    <div class="popup_body">
+      <div class="popup_content">
+        <a href="#glav" class="popup_close">X</a>
+        <div class="popup_title" id="forName"> </div>
+        <div class="popup_text" id="forDate"> </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
